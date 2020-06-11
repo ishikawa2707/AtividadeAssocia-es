@@ -1,0 +1,31 @@
+package AtividadeAssociações;
+
+public class Freelancer {
+	private String nome;
+	private int tempo;
+	private Empresa empresa;
+
+	public Freelancer(String nome, int tempo,Empresa empresa) {
+		this.nome = nome;
+		this.tempo = tempo;
+		this.empresa = empresa;
+		this.empresa.addFrelancer(this);
+	}
+
+	public void setEmpresa(Empresa empresa) {
+		this.empresa = empresa;
+	}
+
+	public Empresa getEmpresa() {
+		return empresa;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public int getTempo() {
+		return tempo;
+	}
+
+}
