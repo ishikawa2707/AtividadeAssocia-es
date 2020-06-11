@@ -1,4 +1,4 @@
-package AtividadeAssociações;
+package unicesumar.segundoBimestre;
 
 public class Funcionario {
 	private String nome;
