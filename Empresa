@@ -1,0 +1,42 @@
+package AtividadeAssociações;
+
+import java.util.ArrayList;
+
+public class Empresa {
+	private String nome;
+	private ArrayList<Tercerizado> tercerizados = new ArrayList<>();
+	private ArrayList<Funcionario> funcionarios = new ArrayList<>();
+	private ArrayList<Freelancer> freelancer = new ArrayList<>();
+	
+	public Empresa(String nome) {
+		this.nome = nome;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void addFuncionario(Funcionario a) {
+		this.funcionarios.add(a);
+	}
+
+	public ArrayList<Funcionario> getFuncionarios() {
+		return this.funcionarios;
+	}
+
+	public void addTercerizado(Tercerizado e) {
+		this.tercerizados.add(e);
+	}
+
+	public ArrayList<Tercerizado> getTercerizados() {
+		return tercerizados;
+	}
+	public void addFrelancer(Freelancer f) {
+		this.freelancer.add(f);
+	}
+	public ArrayList<Freelancer> getFreelancer(){
+		return freelancer;
+	}
+	
+
+}
