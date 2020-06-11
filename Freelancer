@@ -1,4 +1,4 @@
-package AtividadeAssociações;
+package unicesumar.segundoBimestre;
 
 public class Freelancer {
 	private String nome;
