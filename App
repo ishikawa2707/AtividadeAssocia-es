@@ -11,8 +11,8 @@ public class App {
 		Funcionario Victor = new Funcionario("Victor Fagundes", 654321);
 		Funcionario Renata = new Funcionario("Renata Santos", 456321);
 
-		Tercerizado Joao = new Tercerizado("João da Silva", "Solda Max", C3);
-		Tercerizado Bruno = new Tercerizado("Bruno Oliveira", "Limpex", C3);
+		Terceirizado Joao = new Terceirizado("João da Silva", "Solda Max", C3);
+		Terceirizado Bruno = new Terceirizado("Bruno Oliveira", "Limpex", C3);
 
 		Freelancer Rafael = new Freelancer("Rafael Oliveira", 5, C3);
 		Freelancer Felipe = new Freelancer("Felipe Navaz", 10, C3);
@@ -40,9 +40,9 @@ public class App {
 
 	private static void listarTercerizado(Empresa c3) {
 		System.out.println();
-		System.out.println("Funcionários tercerizados e Empresa:");
-		for (Tercerizado e : c3.getTercerizados()) {
-			System.out.println("Nome:" + e.getNome() + "        " + "Tercerizado da empresa:" + "" + e.getFirma());
+		System.out.println("Funcionários terceirizados e Empresa:");
+		for (Terceirizado e : c3.getTercerizados()) {
+			System.out.println("Nome:" + e.getNome() + "        " + "Terceirizado da empresa:" + "" + e.getFirma());
 
 		}
 	}
@@ -62,3 +62,5 @@ public class App {
 	}
 
 }
+
+
