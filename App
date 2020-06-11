@@ -1,0 +1,64 @@
+package AtividadeAssociações;
+
+import java.util.ArrayList;
+
+public class App {
+	public static void main(String[] args) {
+
+		Empresa C3 = new Empresa("Cope 3");
+
+		Funcionario Lucas = new Funcionario("Lucas Hernandes", 123456);
+		Funcionario Victor = new Funcionario("Victor Fagundes", 654321);
+		Funcionario Renata = new Funcionario("Renata Santos", 456321);
+
+		Tercerizado Joao = new Tercerizado("João da Silva", "Solda Max", C3);
+		Tercerizado Bruno = new Tercerizado("Bruno Oliveira", "Limpex", C3);
+
+		Freelancer Rafael = new Freelancer("Rafael Oliveira", 5, C3);
+		Freelancer Felipe = new Freelancer("Felipe Navaz", 10, C3);
+
+		C3.addFuncionario(Lucas);
+		C3.addFuncionario(Victor);
+		C3.addFuncionario(Renata);
+
+		listarFuncionario(C3);
+		listarTercerizado(C3);
+		listarFreelancer(C3);
+
+	}
+
+	private static void listarFreelancer(Empresa h) {
+		System.out.println();
+		System.out.println("Freelancer:");
+		for (Freelancer f : h.getFreelancer()) {
+			System.out
+					.println("Nome:" + "" + f.getNome() + "       " + "Quantidade de dias solicitadas:" + f.getTempo());
+
+		}
+
+	}
+
+	private static void listarTercerizado(Empresa c3) {
+		System.out.println();
+		System.out.println("Funcionários tercerizados e Empresa:");
+		for (Tercerizado e : c3.getTercerizados()) {
+			System.out.println("Nome:" + e.getNome() + "        " + "Tercerizado da empresa:" + "" + e.getFirma());
+
+		}
+	}
+
+	private static void listarFuncionario(Empresa t) {
+		System.out.println("--------------------------------------------");
+		System.out.println("Empresa: " + t.getNome());
+		System.out.println("--------------------------------------------");
+		System.out.println("Funcionarios registrados: ");
+		System.out.println("");
+		for (Funcionario a : t.getFuncionarios()) {
+			System.out.println("Nome:" + a.getNome() + "       " + "Matrícula:" + " " + a.getMatricula());
+			System.out.println("--------------------------------------------");
+
+		}
+
+	}
+
+}
