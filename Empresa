@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Empresa {
 	private String nome;
-	private ArrayList<Tercerizado> tercerizados = new ArrayList<>();
+	private ArrayList<Terceirizado> terceirizados = new ArrayList<>();
 	private ArrayList<Funcionario> funcionarios = new ArrayList<>();
 	private ArrayList<Freelancer> freelancer = new ArrayList<>();
 	
@@ -24,12 +24,12 @@ public class Empresa {
 		return this.funcionarios;
 	}
 
-	public void addTercerizado(Tercerizado e) {
-		this.tercerizados.add(e);
+	public void addTercerizado(Terceirizado e) {
+		this.terceirizados.add(e);
 	}
 
-	public ArrayList<Tercerizado> getTercerizados() {
-		return tercerizados;
+	public ArrayList<Terceirizado> getTercerizados() {
+		return terceirizados;
 	}
 	public void addFrelancer(Freelancer f) {
 		this.freelancer.add(f);
@@ -40,3 +40,4 @@ public class Empresa {
 	
 
 }
+
